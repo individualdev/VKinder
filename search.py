@@ -3,9 +3,9 @@ class Search:
     def __init__(self):
         self.user = ""
 
-    def SearchVKTop(self, api):
-        ...
+    def SearchVKTop(self, api, user):
+        return {"user": user, "api": api}
 
     def top(self, user, api):
         self.user = user
-        self.SearchVKTop(api)
+        return self.SearchVKTop(api, user)
