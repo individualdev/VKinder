@@ -32,6 +32,6 @@ class VKinder(Search):
                         search = self.top(event.user_id, self.vkapi)
                         self.write_msg(event.user_id, search)
                     elif request == "Начать":
-                        self.write_msg(event.user_id, "Команда:\n\nТоп - получить топ 3 по лайкам и комментариям")
+                        self.write_msg(event.user_id, "Команды:\n\nТоп - получить топ 3 по лайкам и комментариям")
                     else:
                         self.write_msg(event.user_id, "Не поняла вашего ответа...")
